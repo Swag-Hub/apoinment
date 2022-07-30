@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    text-align: center;
+    background: green;
+    width: 100%;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    border: solid black;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the topnav links */
+  .topnav  {
+    margin-bottom: 100px;
+    color: hsl(0, 4%, 5%);
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+
+  }
+  .top a {
+    float: left;
+    color: black;
+    display: block;
+    border: solid green;
+    justify-content: space-between;
+    margin: 4px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  .hot{
+    font-size: 20px;
+  }
+  /* Change color on hover */
+  .top a:hover {
+    background-color: green;
+    color: black;
+  }
+  .arrow{
+    padding-left: 500px;
+    font-size: 50px;
+  }
+  .arrow:hover{
+    color: green;
+  }
+  .pain{
+    border: solid black;
+    border-radius: 12px;
+    background-color: green;
+  }
+  .pain img{
+    width:100%;
+    height: 1000px;
+  }
+  .footer{
+    color:green;
+    text-align: center;
+  }
+  .col img{
+    padding: 50px;
+    border-radius: 12px;
+  }
+  .col:hover{
+    transform: scale(1.2);
+    transition: transform .4s;
+ } 
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
